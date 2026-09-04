@@ -1,31 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-    <title>Pranjal Fitness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranjal Fitness</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#111;
+  color:white;
+  line-height:1.6;
+}
+
+header{
+  background:linear-gradient(135deg,#111,#222);
+  text-align:center;
+  padding:50px 20px;
+}
+
+header h1{
+  font-size:42px;
+  color:#ffcc00;
+}
+
+header p{
+  font-size:18px;
+  margin:10px 0 25px;
+  color:#ddd;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  margin:5px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.call{
+  background:#ffcc00;
+  color:#111;
+}
+
+.whatsapp{
+  background:#25d366;
+  color:white;
+}
+
+section{
+  max-width:900px;
+  margin:auto;
+  padding:45px 20px;
+  text-align:center;
+}
+
+h2{
+  color:#ffcc00;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:#1f1f1f;
+  padding:25px 15px;
+  border-radius:15px;
+  border:1px solid #333;
+}
+
+.card h3{
+  margin-bottom:8px;
+}
+
+.price{
+  font-size:35px;
+  color:#ffcc00;
+  font-weight:bold;
+}
+
+.contact{
+  background:#1b1b1b;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#080808;
+  color:#aaa;
+}
+</style>
 </head>
 
 <body>
 
-    <h1>🏋️ Pranjal Fitness</h1>
+<header>
+  <h1>🏋️ Pranjal Fitness</h1>
+  <p>Apni fitness journey aaj se shuru karein! 💪</p>
 
-    <h2>Welcome to Pranjal Fitness</h2>
+  <a class="btn call" href="tel:7309801152">
+    📞 Call Now
+  </a>
 
-    <p>Apni fitness journey aaj se shuru karein!</p>
+  <a class="btn whatsapp"
+     href="https://wa.me/917309801152?text=Hello%20Pranjal%20Fitness,%20mujhe%20membership%20ke%20baare%20mein%20jaankari%20chahiye.">
+    💬 WhatsApp
+  </a>
+</header>
 
-    <h2>💪 Hamari Services</h2>
+<section>
+  <h2>💪 Hamari Services</h2>
 
-    <ul>
-        <li>Personal Training</li>
-        <li>Weight Loss</li>
-        <li>Muscle Building</li>
-        <li>Cardio Training</li>
-    </ul>
+  <div class="services">
 
-    <h2>💰 Membership</h2>
-    <p>Monthly Plan: ₹999</p>
+    <div class="card">
+      <h3>🏋️ Personal Training</h3>
+      <p>Personal trainer ke saath focused workout.</p>
+    </div>
 
-    <h2>📞 Contact</h2>
-    <p>Phone: 7309801152</p>
+    <div class="card">
+      <h3>🔥 Weight Loss</h3>
+      <p>Healthy aur effective weight loss training.</p>
+    </div>
+
+    <div class="card">
+      <h3>💪 Muscle Building</h3>
+      <p>Strength aur muscle gain ke liye training.</p>
+    </div>
+
+    <div class="card">
+      <h3>❤️ Cardio Training</h3>
+      <p>Fitness aur stamina improve karein.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>💰 Membership</h2>
+
+  <div class="card">
+    <p>Monthly Membership</p>
+    <div class="price">₹999</div>
+    <p>Full fitness training ke saath.</p>
+
+    <a class="btn whatsapp"
+       href="https://wa.me/917309801152?text=Hello,%20mujhe%20Pranjal%20Fitness%20ki%20₹999%20membership%20leni%20hai.">
+      Join Now
+    </a>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>📞 Contact Us</h2>
+
+  <p>Membership ya training ke liye contact karein.</p>
+
+  <br>
+
+  <h3>📱 7309801152</h3>
+
+  <a class="btn call" href="tel:7309801152">
+    Call
+  </a>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/917309801152">
+    WhatsApp
+  </a>
+</section>
+
+<footer>
+  © 2026 Pranjal Fitness | All Rights Reserved
+</footer>
 
 </body>
-</html>
+    </html>
